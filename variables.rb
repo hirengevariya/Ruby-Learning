@@ -11,7 +11,7 @@ class Class2
         puts "Global variable in Class2 is #$global_variable"
     end
 end
-puts "Global variables values:-"
+puts "------ Global variables values --------"
 
 class1obj = Class1.new
 class1obj.print_global
@@ -34,8 +34,8 @@ class Customer
       puts "Customer address = #@cust_addr"
    end
 end
-puts ""
-puts "Instance variables values:-"
+
+puts "\n ------ Instance variables values --------"
 
 # Create Objects
 cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
@@ -64,8 +64,8 @@ class Customer
           puts "Total number of customers: #@@no_of_customers"
       end
 end
-puts ""
-puts "Class variables values:-"
+
+puts "\n ------- Class variables values --------"
 
   # Create Objects
 cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
@@ -85,14 +85,16 @@ class Example
       puts "Value of second Constant is #{VAR2}"
    end
 end
-puts ""
-puts "Constant values:-"
+
+puts "\n ------- Constant values --------"
 
 # Create Objects
 object = Example.new()
 object.show
 
         # Hashes
+puts "\n ------- Hashes values --------"
+
 hsh = colors = { "red" => 0xf00, "green" => 0x0f0, "blue" => 0x00f }
 hsh.each do |key, value|
    print key, " is ", value, "\n"
