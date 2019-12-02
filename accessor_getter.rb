@@ -2,7 +2,8 @@
 class Box
   # constructor method
   def initialize(w,h)
-    @width, @height = w, h
+    @width = w
+    @height = h
   end
 
   # accessor methods
